@@ -12,7 +12,7 @@ app.use(express.json()); // Utiliza o método embutido do express para JSON
 
 // Roteadores
 app.use('/api/inventory', inventoryRoutes);
-app.use('/api', authRoutes); // Certifique-se de que está usando '/api' para autenticação
+app.use('/api', authRoutes); 
 
 // Iniciar o servidor
 app.listen(port, () => {
