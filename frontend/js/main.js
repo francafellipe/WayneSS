@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Verifique se a página atual é a de dashboard e, se for, carregue o inventário
+    // condição, Verifique se a página atual é a de dashboard e, se for, carregue o inventário
     if (window.location.pathname.endsWith('dashboard.html')) {
         loadInventory();
     }
