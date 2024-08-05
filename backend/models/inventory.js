@@ -13,7 +13,7 @@ db.serialize(() => {
         console.log('Tabela "inventory" criada ou já existe.');
     });
 
-    // Inserir dados iniciais se a tabela estiver vazia
+    // Inserir dados iniciais se a tabela estiver vazia, traz os dados do .bd criado na maquina pessoal.
     db.get("SELECT COUNT(*) AS count FROM inventory", (err, row) => {
         if (err) {
             console.error('Erro ao contar registros:', err.message);
