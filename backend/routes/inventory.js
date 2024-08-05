@@ -4,7 +4,7 @@ const inventoryModel = require('../models/inventory');
 
 router.get('/', (req, res) => {
     inventoryModel.getInventory(items => {
-        console.log('Inventário:', items); // Adicione esta linha para depuração
+        console.log('Inventário:', items); //linha para depuração
         res.json(items);
     });
 });
